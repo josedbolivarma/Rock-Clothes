@@ -1,0 +1,188 @@
+/* Custom Properties */
+:root{
+    --first-color:#4C0027;
+    --first-alpha-color:rgba(35, 0, 192, 0.836);
+    --second-color:#570530;
+    --second-alpha-color:rgba(0, 196, 114, 0.836);
+    --third-color:#750550;
+    --third-alpha-color:rgba(0, 134, 158, 0.836);
+    --fourt-color: #980F5A;
+    --fourt-alpha-color: rgba(152, 15, 90, 0.747);
+    /* gray scale */
+    --white-color:#fff;
+    --gray-light-color:#f3f3f3;
+    --gray-color:#ccc;
+    --gray-dark-color:#666;
+    --black-color:#000;
+    /* links */
+    --link-color:#610041;
+    --link-color-hover: #74004d;
+    --title-color:#333;
+    --text-color:#222;
+    /* Shadow */
+    --primary-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --secondary-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --white-alpha-color:rgba(255, 255, 255, 0.5);
+    --black-alpha-color:rgba(0, 0, 0, 0.5);
+    --font-family:"Raleway","sans serif";
+    --max-width:1200px;
+}
+
+/*Reset*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Utilities*/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 4rem auto;
+}
+
+/*Components*/
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.shopping-car-count {
+    margin-left: 2rem;
+}
+
+/**/
+body {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background: linear-gradient(var(--first-color), var(--second-color), var(--third-color));
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 2rem;
+}
+
+/*shopping card*/
+.shopping-car {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.shopping-car-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.shopping-car span {
+    position: absolute;
+    top: -10px;
+    right: -16px;
+    font-size: 1.2rem;
+    color: red;
+    font-weight: bold;
+}
+/*main*/
+
+main {
+    min-height: 100vh;
+}
+
+/*footer*/
+
+.footer {
+    background: linear-gradient(var(--black-color), var(--text-color));
+    color: var(--white-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+.social-icon path {
+    fill: #fff;
+}
+
+.btn {
+    padding: .85rem 1rem;
+    background-color: var(--link-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    margin: .45rem 0;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.btn:hover {
+    background-color: var(--link-color-hover);
+}
+
+.squart-btn {
+    padding: .72rem 1rem;
+    background-color: transparent;
+    border: 1px solid #333;
+    outline: none;
+    margin: .45rem 0;
+    cursor: pointer;
+}

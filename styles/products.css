@@ -1,0 +1,48 @@
+.products-labels {
+    display: flex;
+    justify-content: end;
+}
+
+.products-labels h4 {
+    margin-right: 1.4rem;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #000;
+
+}
+
+.product-card {
+    width: 140px;
+}
+
+.product-card p {
+    text-align: center;
+}
+
+.product-info span {
+    margin-right: 2.4rem;
+}
+
+.pay-section {
+    position: relative;
+    width: 100%;
+    background-color: var(--gray-light-color);
+    padding: 1rem 0;
+    padding-right: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.pay-info {
+    text-align: center;
+}
+
+.pay-info .btn {
+    min-width: 200px;
+}

@@ -1,0 +1,75 @@
+aside {
+    position: absolute;
+    background-color: gainsboro;
+    width: 180px;
+    height: 100%;
+    text-align: center;
+    left: -180px;
+    transition: all .3s;
+}
+
+.open-aside {
+    left: 0;
+}
+
+aside div {
+    margin-top: 2rem;
+}
+
+aside p {
+    margin-bottom: 1rem;
+}
+
+aside p a{
+    color: #000;
+}
+
+.section-products-category {
+    width: 100%;
+
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.hover-card:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.hover-card:hover ~ .grid-layout-card {
+    transform: scale(.8);
+}
+
+.grid-layout-card {
+    text-align: center;
+    height: auto;
+    box-shadow: var(--primary-shadow);
+    transition: transform .5s;
+}
+
+.grid-layout-card img {
+    width: 100%;
+    height: 320px;
+}
+
+.grid-layout-card-text {
+    padding: .8rem;
+}
+
+.grid-layout-card-text h2 {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    margin-bottom: .4rem;
+    color: var(--title-color)
+}
+
+.grid-layout-card-text span {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    color: var(--fourt-color);
+}

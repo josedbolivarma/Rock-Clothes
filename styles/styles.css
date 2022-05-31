@@ -1,0 +1,68 @@
+@import url("main.css");
+
+/*utilities*/
+
+/* Hero-image */
+.hero-image{
+    width: 100%;
+    background-image:url("https://p4.wallpaperbetter.com/wallpaper/477/897/238/nirvana-music-dark-band-wallpaper-preview.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    height: 60vh;
+}
+
+.hero-image-opacity{
+    width: 100%;
+    height: 60vh;
+    background: var(--black-alpha-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    height: 60vh;
+
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    position: relative;
+    width: 40%;
+    height: 400px;
+    background-color: #c2c2c2;
+    margin: 2rem 1rem;
+    cursor: pointer;
+    box-shadow: var(--primary-shadow);
+}
+
+.category:hover {
+    box-shadow: var(--secondary-shadow);
+}
+
+.category-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.category-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.category-content .category-info {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-transform: uppercase;
+}
